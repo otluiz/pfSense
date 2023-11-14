@@ -1,0 +1,91 @@
+
+.App {
+  text-align: center;
+}
+
+.App-logo {
+  /* Set the logo height and ensure it is centered */
+  height: 40vmin;
+  pointer-events: none;
+  margin: 0 auto; /* Center the logo horizontally */
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center; /* Center children horizontally */
+  justify-content: center; /* Center children vertically */
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+body {
+  display: flex;
+  justify-content: center; /* Center children horizontally */
+  align-items: center; /* Center children vertically */
+  height: 100vh;
+  margin: 0;
+  background-color: #007bff; /* blue */
+  font-family: Arial, sans-serif;
+}
+
+.login-container {
+  text-align: center;
+  background-color: white;
+  border-radius: 10px;
+  padding: 40px;
+  box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.1);
+  max-width: 400px;
+  width: 90%;
+  margin: 0 auto; /* Center the container */
+}
+
+input, button {
+  /* Center the input fields and button and full width */
+  display: block;
+  margin: 10px auto; /* Center horizontally and margin for top and bottom */
+  padding: 10px;
+  width: calc(100% - 20px); /* Full width minus padding */
+  border: 1px solid #dbdbdb;
+  border-radius: 5px;
+}
+
+button {
+  background-color: #3897f0;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  font-size: 1.2em;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #4fa3d1;
+}
+
+.error-message {
+  color: red;
+  margin-top: 10px;
+  font-size: 1.2em;
+}
